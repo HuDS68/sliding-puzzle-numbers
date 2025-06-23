@@ -1,0 +1,65 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px;
+}
+
+#puzzle {
+  display: grid;
+  gap: 5px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.tile {
+  background: #00bcd4;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tile.empty {
+  background: transparent;
+  cursor: default;
+}
+
+.info {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background: #0ff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #00bcd4;
+}
